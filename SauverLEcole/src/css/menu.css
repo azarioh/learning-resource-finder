@@ -1,0 +1,29 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+@media screen and (min-width: 601px){
+	.menu{
+		float:left;
+		display:block;
+		position:relative;
+		margin-top:-1em;
+		height:0px;
+	}
+	
+	.menu ul{
+		float:left;
+		margin-left:auto;
+		margin-right:auto;
+		list-style-type:none;
+	}
+	
+	.menu ul li{
+		float:left;
+		padding:1em;
+		height:1em;
+		display:inline;
+		padding-left:2em;
+		padding-right:2em;
+		background-color:#FFCC00;
+		text-align:center;
+	}
+}
