@@ -312,3 +312,10 @@ background-color: #2ABEB2;
     font-style: normal;
 
 }
+
+
+
+@media (min-width: 768px)
+.lead {
+font-size: 10px !important;
+}
