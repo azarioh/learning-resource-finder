@@ -32,15 +32,39 @@
     <link href="css/parallaxe.css" rel="stylesheet">
 	<script type="text/javascript">
 		
-		var SCROLL_1 =20;
-		var SCROLL_2 =30;
-		var SCROLL_3 =40;
+		var SCROLL_1 =2;
+		var SCROLL_2 =3;
+		var SCROLL_3 =4;
 		var PENTE = 0.36;
 		var scroll1;
 		var scroll2;
 		var scroll3;		
 		var bodyWidth;
 		var bodyHeight;
+		
+		var docElem = document.documentElement;
+
+
+		$(document).ready(function(){
+			getDimensions();
+			window.addEventListener('resize', function(event){
+				getDimensions();
+			});
+		});
+		function getDimensions(){
+			bodyHeight = docElem.clientHeight;
+			bodyWidth = docElem.clientWidth;
+		};
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		$(window).load(function() 
 		{
 			
@@ -61,11 +85,16 @@
 		
 		function calculDimensions() 
 		{
-			bodyWidth = $("body").width();
+			/*bodyWidth = $(window).width();
 			bodyHeight = $("body").height();
-			scroll1 = bodyWidth/(3.4*SCROLL_1);
-			scroll2 = bodyWidth/(3.4*SCROLL_2);
-			scroll3 = bodyWidth/(3.4*SCROLL_3);				
+			*/
+			
+			bodyHeight = docElem.clientHeight;
+			bodyWidth = docElem.clientWidth;
+			
+			scroll1 = SCROLL_1*bodyWidth/100;
+			scroll2 = SCROLL_2*bodyWidth/100;
+			scroll3 = SCROLL_3*bodyWidth/100;				
 		}
 
 		$(window).bind('scroll',function(e)
