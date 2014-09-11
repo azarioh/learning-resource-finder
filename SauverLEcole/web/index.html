@@ -8,15 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
     <title>Sauver l'école ?</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,18 +24,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<script type="text/javascript">
-	
-			$(function() {
-				    $('.CountdownContainer').countdown({
-				        date: "March 18, 2015 00:00:00"
-				    });
-				});
-		
-	</script>
-
 </head>
-
 
 <body>
 
@@ -74,12 +62,11 @@
 
     <!-- Full Width Image Header -->
     <header class="header-image">
-    
 	<div class="row">
 		<div class="container">
 			<div class="col-md-6"> 
 			<!--lead img-responsive img-center-->
-				<img class="lead img-responsive" src="img\cover.jpg">
+				<img class="lead img-responsive" id="image-cover" src="img\cover.jpg">
 			</div>	 
 			<div class="col-md-6">
 				<h3 id="synopsys-title">Sauver l’école?</h3>
@@ -88,41 +75,42 @@
 		</div>	
 	</div>	
     </header>
-	
+
     <!-- Page Content -->
     <div class="container">
- 	   <div class="CountdownContainer"></div>
-		<div id="synopsis-divider"></div>
+		<div id="synopsis-divider">
 			<hr class="featurette-divider">
-		
-        <!-- First Featurette -->
-        <div class="featurette" id="synopsis">  
-
-		<h2 class="featurette-heading">Synopsis :
-			<span class="text-muted">Sauvez l'école&nbsp;?</span>
-		</h2>
-			<p class="lead">
-			Depuis plusieurs années, les classements internationaux placent l’enseignement en Fédération Wallonie-Bruxelles en piètre posture. La faute à qui&nbsp;? À la politique&nbsp;? Aux profs&nbsp;? À l’administration&nbsp;? Aux parents&nbsp;? Aux élèves&nbsp;? À la crise&nbsp;?
-			Après avoir consacré de nombreuses années de sa vie à l’enseignement de l’informatique, John Rizzo a décidé de dédier l’essentiel de son temps à l’étude des arcanes du système scolaire belge. D’abord dans les livres puis sur le terrain, au sein d’une panoplie d’écoles wallonnes et bruxelloises en tous genres. Au fil des années, il a rencontré des acteurs clés de notre système éducatif et dégagé, peu à peu, quelques clés de compréhension.
-			L’école doit-elle être réformée&nbsp;? Faut-il repartir de zéro et bâtir un système adapté aux besoins modernes et aux nouveaux modes de communication&nbsp;? En somme, faut-il sauver l’école&nbsp;? 
-			</p> 
-		<!--		<img class="featurette-image img-thumbnail img-responsive" src="img\HiRes.jpg"> -->
 			
-        </div>
-		
-		<div id="about-divider"></div>
-		<hr class="featurette-divider">
-		
-        <!-- Second Featurette -->
-        <div class="featurette row" id="about">
-			<div class="col-md-3"> 
-				<img class="featurette-image img-rectangle img-responsive" src="img\IMG_3913.jpg">
+			<!-- First Featurette -->
+			<div class="featurette" id="synopsis">  
+
+			<h2 class="featurette-heading">Sauvez l'école&nbsp;?
+				<span class="text-muted"></span>
+			</h2>
+				<p class="lead">
+				Depuis plusieurs années, les classements internationaux placent l’enseignement en Fédération Wallonie-Bruxelles en piètre posture. La faute à qui&nbsp;? À la politique&nbsp;? Aux profs&nbsp;? À l’administration&nbsp;? Aux parents&nbsp;? Aux élèves&nbsp;? À la crise&nbsp;?
+				Après avoir consacré de nombreuses années de sa vie à l’enseignement de l’informatique, John Rizzo a décidé de dédier l’essentiel de son temps à l’étude des arcanes du système scolaire belge. D’abord dans les livres puis sur le terrain, au sein d’une panoplie d’écoles wallonnes et bruxelloises en tous genres. Au fil des années, il a rencontré des acteurs clés de notre système éducatif et dégagé, peu à peu, quelques clés de compréhension.
+				L’école doit-elle être réformée&nbsp;? Faut-il repartir de zéro et bâtir un système adapté aux besoins modernes et aux nouveaux modes de communication&nbsp;? En somme, faut-il sauver l’école&nbsp;? 
+				</p> 
+			<!--		<img class="featurette-image img-thumbnail img-responsive" src="img\HiRes.jpg"> -->
+				
 			</div>
-			<div class="col-md-9"> 
-				<h2 class="featurette-heading">A propos de l'auteur :
-					<span class="text-muted">John Rizzo</span>
-				</h2>
-				<p class="lead">20 ans d'expérience dans l'enseignement de l'informatique de haut niveau aux adultes ont fait de John Rizzo un spécialiste de la collaboration entre élèves et de l'usage d'Internet en classe. Père de trois enfants, il consacre l'essentiel de son temps depuis 2012 à comprendre et aider le système scolaire belge. C'est dans ce cadre qu'il a fondé ToujoursPlus.be, une plateforme informatique d'aide aux élèves, aux parents et aux enseignants où ceux-ci trouveront vidéos, ressources et jeux pédagogiques. Celle plateforme sera lancée en octobre 2014 et précédera la parution d'un ouvrage relatant l'essentiel de ses conclusions et de son expérience dans les écoles, à paraître chez Ker éditions en mars 2015 sous le titre Sauver l'école&nbsp;?</p>
+		</div>
+		<div id="about-divider">
+			<hr class="featurette-divider">
+			
+			<!-- Second Featurette -->
+			<div class="featurette row" id="about">
+				<div class="col-md-9"> 
+<!-- 					<h2 class="featurette-heading">John Rizzo
+						<span class="text-muted"></span>
+					</h2> -->
+					<p class="lead">20 ans d'expérience dans l'enseignement de l'informatique de haut niveau aux adultes ont fait de John Rizzo un spécialiste de la collaboration entre élèves et de l'usage d'Internet en classe. Père de trois enfants, il consacre l'essentiel de son temps depuis 2012 à comprendre et aider le système scolaire belge. C'est dans ce cadre qu'il a fondé ToujoursPlus.be, une plateforme informatique d'aide aux élèves, aux parents et aux enseignants où ceux-ci trouveront vidéos, ressources et jeux pédagogiques. Celle plateforme sera lancée en octobre 2014 et précédera la parution d'un ouvrage relatant l'essentiel de ses conclusions et de son expérience dans les écoles, à paraître chez Ker éditions en mars 2015 sous le titre Sauver l'école&nbsp;?</p>
+				</div>
+				<div class="col-md-3"> 
+					<img class="featurette-image img-rectangle img-responsive"  src="img\john.png">
+					<p>John Rizzo,<br/>explorateur de l'enseignement</p>
+				</div>
 			</div>
 		</div>
  <!-- 
@@ -137,9 +125,9 @@
             </h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
- -->
-        <hr class="featurette-divider">
 
+        <hr class="featurette-divider">
+ -->
         <!-- Footer -->
         <footer>
             <div class="row">
