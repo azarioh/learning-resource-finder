@@ -10,6 +10,7 @@
     <meta name="author" content="">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<!--  <script type="text/javascript" src="js/fbComments.js"></script> -->
     <title>Sauver l'école ?</title>
 
     <!-- Bootstrap Core CSS -->
@@ -34,12 +35,24 @@
 					 $('.countdown').append();
 				});
 		
+
+		
+		
 	</script>
+	
 
 </head>
 
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1414750432070920&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -153,8 +166,7 @@
 			-->
         <div id="synopsis-facebook">
 	        <div class="featurette row" id="facebook">
-	        	
-	        	
+	       		<div class="fb-comments" data-href="https://www.facebook.com/sauverlecole.be/comments" data-numposts="5" data-colorscheme="light"></div>
 	        </div>
         </div>
         <hr class="featurette-divider">
