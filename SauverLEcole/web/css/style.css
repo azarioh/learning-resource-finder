@@ -47,9 +47,6 @@ a {
 	color: #f4f19a;
 	
  }
-a::after{
-	/*content('<span class="">');*/
-}
 	
 
 p ::first-letter{
