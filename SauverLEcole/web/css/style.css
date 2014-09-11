@@ -44,8 +44,13 @@ body {
 }
 
 a {
-	color: #fff;
+	color: #f4f19a;
+	
  }
+a::after{
+	/*content('<span class="">');*/
+}
+	
 
 p ::first-letter{
 	float:left;
@@ -319,8 +324,12 @@ background-color: #2ABEB2;
     font-style: normal;
 
 }
-
-
+#navheader>li>a ,#titleheader {
+color: #f4f19a;
+}
+#navbarheader{
+	background-color:#362b00;
+}
 
 @media (min-width: 768px)
 .lead {
