@@ -6,6 +6,8 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	font-family: "bauerbodonistd";
+	font-style:normal;
 	overflow-x : hidden;
 	}
 
@@ -38,41 +40,64 @@ body {
     background: rgba(255,255,255,0.9);
 }
 
+.navbar {
+}
 
-#synopsys-title {
+#synopsis-title {
     font-size: 50px;
 	color: #fff;
 	text-align: left;
+	font-family: "bauerbodonistd";
+	font-style:italic;
 }
 
-#synopsys-short{
+#synopsis-short{
 	font-size: 1.5em;
 	color: #fff;
 	text-align: left;
 }
 
+ 
+#synopsis{
+	font-size: 1.5em;
+	
+}
+
+#author{
+	font-size: 1.5em;
+}
+ 
+#contact{
+	text-align: right;
+}
+
 #countdown-container{
 	text-align: center;
+	font-size: 1.5em;
+	/* 
+	font-family: "itcgaramondstdbk";
+	font-style:normal; 
+	*/
 }
+
 
 .countdown {
-	font-size: 20px;
+	font-size: 40px;
 }
 
 
-.lead{
+/* .lead{
 	margin-top:20px;
 	margin-bottom:20px;
-}
+} */
 
 #image-cover{
-	margin-left:auto;
+ 	margin-left:auto;
 	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;	
 }
 
-.img-center {
-	margin:0 auto;
-}
 
 footer {
     margin: 50px 0;
@@ -84,7 +109,7 @@ footer {
 /* #synopsis-divider{
 background-color: #62C5B1;
 }
-#about-divider{
+#author-divider{
 background-color: #2ABEB2;
 } */
 
@@ -227,3 +252,52 @@ background-color: #2ABEB2;
     }
 }
 
+@font-face {
+    font-family: 'bauerbodonistd';
+    src: url('../fonts/BauerBodoniStd-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'bauerbodonistd';
+    src: url('../fonts/BauerBodoniStd-Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'itcgaramondstdbk';
+    src: url('../fonts/ITCGaramondStd-Bk.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'itcgaramondstdbk';
+    src: url('../fonts/ITCGaramondStd-BkIta.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'itcgaramondstdbk';
+    src: url('../fonts/ITCGaramondStd-Bd.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'itcgaramondstdlt';
+    src: url('../fonts/ITCGaramondStd-Lt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'minionproregular';
+    src: url('../fonts/MinionPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
