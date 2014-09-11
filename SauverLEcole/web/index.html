@@ -26,6 +26,70 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	
+	<!-- <script type="text/javascript" src="scripts/jquery-1.11.1.js"></script>	-->
+	
+    <link href="css/parallaxe.css" rel="stylesheet">
+	<script type="text/javascript">
+		
+		var SCROLL_1 =20;
+		var SCROLL_2 =30;
+		var SCROLL_3 =40;
+		var PENTE = 0.36;
+		var scroll1;
+		var scroll2;
+		var scroll3;		
+		var bodyWidth;
+		var bodyHeight;
+		$(window).load(function() 
+		{
+			
+			$('#parallax-bg1').css('z-index',100);		
+			$('#parallax-bg2').css('z-index',110);		
+			$('#parallax-bg3').css('z-index',120);		
+		
+			calculDimensions() 
+			$("object.parralaxObject").width(bodyWidth);			
+			parallaxScroll();	
+			window.addEventListener('resize', function(event)
+			{
+				calculDimensions();				
+				$("object.parralaxObject").width(bodyWidth);
+				parallaxScroll();
+			});
+		});
+		
+		function calculDimensions() 
+		{
+			bodyWidth = $("body").width();
+			bodyHeight = $("body").height();
+			scroll1 = bodyWidth/(3.4*SCROLL_1);
+			scroll2 = bodyWidth/(3.4*SCROLL_2);
+			scroll3 = bodyWidth/(3.4*SCROLL_3);				
+		}
+
+		$(window).bind('scroll',function(e)
+		{
+			parallaxScroll();
+		});
+
+		function parallaxScroll()
+		{
+			var scrolled = $(window).scrollTop();
+			bodyHeight = $("body").height();
+			$('#parallax-bg1').css('bottom',(scrolled/bodyHeight)*scroll1-scroll1+'px');
+			$('#parallax-bg2').css('bottom',(scrolled/bodyHeight)*scroll2-scroll2+'px');
+			$('#parallax-bg3').css('bottom',(scrolled/bodyHeight)*scroll3-scroll3+'px');
+			
+			
+			$('#parallax-people').css('bottom',(scrolled/bodyHeight)*(scroll1+(bodyWidth/68))-scroll1+'px');
+			$('#parallax-people').css('left',(scrolled/bodyHeight)*(scroll1+(bodyWidth/68))+'px');
+		}
+	
+	</script>
+	
+	
+	
 	<script type="text/javascript">
 	
 			$(function() {
@@ -187,6 +251,33 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+		
+		
+		
+		
+		<section id="parallaxBG">
+			<!-- Parallax foreground -->
+			<div id="parallax-bg3">				
+				<object class="parralaxObject" type="image/svg+xml" data="img/parallaxe/slope3.svg">
+				</object>
+			</div>			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2">				
+				<object class="parralaxObject" type="image/svg+xml" data="img/parallaxe/slope2.svg">
+				</object>
+			</div>			
+			<!-- Parallax  background clouds -->			
+			<div id="parallax-bg1">				
+				<object class="parralaxObject" type="image/svg+xml" data="img/parallaxe/slope.svg">
+				</object>
+				
+			</div>	
+			<!-- Parallax  background clouds -->			
+			<div id="parallax-people">				
+				<object class="parralaxObject" type="image/svg+xml" data="img/parallaxe/mountainAndPeople.svg">
+				</object>
+			</div>
+		</section>
 </body>
 
 </html>
