@@ -115,7 +115,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       refresh: 1000,
       onEnd: $.noop,
       render: function(date) {
-        return $(this.el).html("" + date.days + " jours, " + (this.leadingZeros(date.hours)) + " heures, " + (this.leadingZeros(date.min)) + " minute et " + (this.leadingZeros(date.sec)) + " secondes");
+        return $(this.el).html("" + date.days + " jours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + (this.leadingZeros(date.hours)) + "h&nbsp;&nbsp;" + (this.leadingZeros(date.min)) + "m&nbsp;&nbsp;" + (this.leadingZeros(date.sec)) + "s");
       }
     };
     $.fn.countdown = function(options) {

@@ -31,6 +31,7 @@
 				    $('.countdown').countdown({
 				        date: "March 18, 2015 00:00:00"
 				    });
+					 $('.countdown').append();
 				});
 		
 	</script>
@@ -62,9 +63,9 @@
                     <li>
                         <a href="#about-divider">A propos</a>
                     </li>
-<!--                <li>
-                        <a href="#contact">Contact</a>
-                    </li> -->
+					<li>
+                        <a href="#contact-divider">Contact</a>
+                    </li> 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -90,24 +91,31 @@
 
     <!-- Page Content -->
     <div class="container">
- 	 
+		<hr class="featurette-divider">
+		<div id="countdown-container">
+			<div class="countdown">		</div>
+			<div id="coming-date">à paraître, le 18 mars 2015</div>
+		</div>
+
 		<div id="synopsis-divider">
-			  <div class="countdown"></div>
+			  
 		
 			<hr class="featurette-divider">
 			
 			<!-- First Featurette -->
 			<div class="featurette" id="synopsis">  
 
-			<h2 class="featurette-heading">Sauvez l'école&nbsp;?
-				<span class="text-muted"></span>
-			</h2>
+				<h2 class="featurette-heading">Sauvez l'école&nbsp;?
+					<span class="text-muted"></span>
+				</h2>
 				<p class="lead">
 				Depuis plusieurs années, les classements internationaux placent l’enseignement en Fédération Wallonie-Bruxelles en piètre posture. La faute à qui&nbsp;? À la politique&nbsp;? Aux profs&nbsp;? À l’administration&nbsp;? Aux parents&nbsp;? Aux élèves&nbsp;? À la crise&nbsp;?
 				Après avoir consacré de nombreuses années de sa vie à l’enseignement de l’informatique, John Rizzo a décidé de dédier l’essentiel de son temps à l’étude des arcanes du système scolaire belge. D’abord dans les livres puis sur le terrain, au sein d’une panoplie d’écoles wallonnes et bruxelloises en tous genres. Au fil des années, il a rencontré des acteurs clés de notre système éducatif et dégagé, peu à peu, quelques clés de compréhension.
 				L’école doit-elle être réformée&nbsp;? Faut-il repartir de zéro et bâtir un système adapté aux besoins modernes et aux nouveaux modes de communication&nbsp;? En somme, faut-il sauver l’école&nbsp;? 
 				</p> 
-			<!--		<img class="featurette-image img-thumbnail img-responsive" src="img\HiRes.jpg"> -->
+			<!-- 
+				<img class="featurette-image img-thumbnail img-responsive" src="img\HiRes.jpg"> 
+			-->
 				
 			</div>
 		</div>
@@ -128,21 +136,15 @@
 				</div>
 			</div>
 		</div>
- <!-- 
-		Third Featurette
-        <hr class="featurette-divider">
 
-       
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+		<div id="contact-divider">
+			<div class="featurette" id="contact">
+				<a href="http://aliaz.com/john-rizzo">Détails et contact</a>
+			 </div>
+		 </div>
 
         <hr class="featurette-divider">
- -->
+
         <!-- Footer -->
         <footer>
             <div class="row">
