@@ -1,0 +1,172 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BauerBodoniStd-Italic
+FamilyName:Bauer Bodoni Std 1
+StyleName:Italic
+MenuName:Bauer Bodoni Std
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Bauer Bodoni Std 1 Italic
+WritingScript:Roman
+OutlineFileName:\BauerBodoniStd-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:37864
+FileModTime:1052763444
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BauerBodoniStd-Roman
+FamilyName:Bauer Bodoni Std 1
+StyleName:Roman
+MenuName:Bauer Bodoni Std
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Bauer Bodoni Std 1 Roman
+WritingScript:Roman
+OutlineFileName:\BauerBodoniStd-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:47024
+FileModTime:1052763444
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GiovanniStd-BookItalic
+FamilyName:ITC Giovanni Std
+StyleName:Book Italic
+MenuName:ITC Giovanni Std Book
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:ITC Giovanni Std Book Italic
+WritingScript:Roman
+OutlineFileName:\GiovanniStd-BookItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:33068
+FileModTime:1052763472
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ITCGaramondStd-Bd
+FamilyName:ITC Garamond Std
+StyleName:Bold
+MenuName:ITC Garamond Std Book
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:ITC Garamond Std Bold
+WritingScript:Roman
+OutlineFileName:\ITCGaramondStd-Bd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:43700
+FileModTime:1052763472
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ITCGaramondStd-Bk
+FamilyName:ITC Garamond Std
+StyleName:Book
+MenuName:ITC Garamond Std Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:ITC Garamond Std Book
+WritingScript:Roman
+OutlineFileName:\ITCGaramondStd-Bk.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:42980
+FileModTime:1052763472
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ITCGaramondStd-BkIta
+FamilyName:ITC Garamond Std
+StyleName:Book Italic
+MenuName:ITC Garamond Std Book
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:ITC Garamond Std Book Italic
+WritingScript:Roman
+OutlineFileName:\ITCGaramondStd-BkIta.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:44516
+FileModTime:1052763472
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ITCGaramondStd-Lt
+FamilyName:ITC Garamond Std
+StyleName:Light
+MenuName:ITC Garamond Std Lt
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:ITC Garamond Std Light
+WritingScript:Roman
+OutlineFileName:\ITCGaramondStd-Lt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:38456
+FileModTime:1052763472
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:184404
+FileModTime:1052763500
+DesignSize:110
+%EndFont
+
