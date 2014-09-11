@@ -49,6 +49,8 @@ body {
 	text-align: left;
 	font-family: "bauerbodonistd";
 	font-style:italic;
+	margin-top: 50px;
+	visibility:visible;
 }
 
 #synopsis-short{
@@ -230,6 +232,13 @@ background-color: #2ABEB2;
     .headline h2 {
         font-size: 30px;
     }
+	
+	#synopsys-title{
+		font-size:12px;
+		margin-top:0%;
+		visibility:hidden;
+	}
+	
 }
 
 @media(max-width:375px) {
