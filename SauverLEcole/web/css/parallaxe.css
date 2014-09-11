@@ -30,6 +30,9 @@ h2
 }
 /**************************/
 
+[id*="parallax"]{
+	pointer-events:none;
+}
 
 #parallax-bg1 , #parallax-people
 {
