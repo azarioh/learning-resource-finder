@@ -5,12 +5,12 @@
  */
 
 body {
-    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    margin-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	font-family: "bauerbodonistd";
 	font-style:normal;
 	overflow-x : hidden;
 	}
-
+	
 .header-image {
     display: block;
     width: 100%;
@@ -43,13 +43,20 @@ body {
 .navbar {
 }
 
+p ::first-letter{
+	float:left;
+	font-size:4em;
+	color: #f4f19a;
+	margin-right:0.10em;
+	line-height:90%;
+}
+
 #synopsis-title {
     font-size: 50px;
 	color: #fff;
 	text-align: left;
 	font-family: "bauerbodonistd";
 	font-style:italic;
-	margin-top: 50px;
 	visibility:visible;
 }
 
