@@ -9,6 +9,7 @@ body {
 	font-family: "bauerbodonistd";
 	font-style:normal;
 	overflow-x : hidden;
+	background-color: rgb(57,140,190);
 	}
 	
 .header-image {
@@ -21,7 +22,6 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	background-color: rgb(57,140,190);
 }
 
 .headline {
@@ -69,11 +69,13 @@ p ::first-letter{
  
 #synopsis{
 	font-size: 1.5em;
+	color: #fff;
 	
 }
 
 #author{
 	font-size: 1.5em;
+	color: #fff;
 }
  
 #contact{
