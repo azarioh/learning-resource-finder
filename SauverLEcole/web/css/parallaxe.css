@@ -1,32 +1,32 @@
-
-
-[id*="parallax"]{
-	pointer-events:none;
+body
+{
+	margin : 0;
+	padding : 0;
 }
 
-#parallax-bg1 , #parallax-people
+
+object
 {
-    z-index: 30;
     position: fixed;
     bottom: 0px;
 }
 	
+	
+#parallax-bg1 
+{
+    z-index: 100;
+}
+ #parallax-people
+{
+    z-index: 110;
+}	
+	
 #parallax-bg2 
 {
-    z-index: 20;
-    position: fixed;
-    bottom: 0px;
+    z-index: 120;
 }
 
 #parallax-bg3 
 {
-    z-index: 10;
-    position: fixed;
-    bottom: 0px;
-}	
-
-#parallaxBG
-{
-display : none;
-	//visibility : hidden;
-}
+    z-index: 130;
+}		

@@ -1,116 +1,93 @@
-		
-		var SCROLL_1 =2;
-		var SCROLL_2 =3;
-		var SCROLL_3 =7;
-		var PENTE = 0.36;
-		var scroll1;
-		var scroll2;
-		var scroll3;		
-		var bodyWidth;
-		var bodyHeight;
-		
-		var docElem = document.documentElement;
+var PENTE = 0.60;
 
-		function getDimensions(){
-			bodyHeight = docElem.clientHeight;
-			bodyWidth = docElem.clientWidth;
-			if(bodyHeight == null)
-			{
-				bodyHeight = $(window).height();			
-			}
-			if(bodyWidth == null)
-			{
-				bodyWidth = $(window).width();				
-			}
-			if(bodyHeight == null)
-			{
-				bodyHeight = $(document).height();			
-			}
-			if(bodyWidth == null)
-			{
-				bodyWidth = $(document).width();				
-			}
-		};
+var percentVariationScroll1 = 2;
+var percentVariationScroll2 =4;
+var percentVariationScroll3 =8;
 
-		/*
+var bodyWidth;
+var bodyHeight;
+var screenHeight;
+var screenWidth;
+
+/*
 		$(window).load(function() 
 		{
-			calculDimensions() 
-			alert("window : load : "+bodyWidth+" : "+bodyHeight);		
+			calculDimensions();
+			parallaxScroll();	
 		});
 		$(document).load(function() 
 		{
-			calculDimensions() 
-			alert("document : load : "+bodyWidth+" : "+bodyHeight);
+			calculDimensions() ;
+			parallaxScroll();
 		});
 		$(window).ready(function() 
 		{		
-			calculDimensions() 
-			alert("window : ready : "+bodyWidth+" : "+bodyHeight);
+			calculDimensions() ;
+			parallaxScroll();
 		});
 		$(document).ready(function() 
 		{	
-			calculDimensions() 	
-			alert("document : ready : "+bodyWidth+" : "+bodyHeight);
-		});
-		
-		
-		*/
-		
-		
-		
-		
-		
-		
-		
-		$(window).ready(function() 
-		{
-			$('#parallax-bg1').css('z-index',100);
-			$('#parallax-people').css('z-index',110);				
-			$('#parallax-bg2').css('z-index',120);		
-			$('#parallax-bg3').css('z-index',130);		
-		
-			calculDimensions() 
-			parallaxScroll();	
-			$("object.parralaxObject").width(bodyWidth);
-			$("#parallaxBG").css("display","block");			
-			parallaxScroll();	
-			window.addEventListener('resize', function(event)
-			{
-				calculDimensions();				
-				$("object.parralaxObject").width(bodyWidth);
-				parallaxScroll();
-			});
-		});
-		
-		function calculDimensions() 
-		{
-			/*bodyWidth = $(window).width();
-			bodyHeight = $("body").height();
-			*/
-			
-			bodyHeight = docElem.clientHeight;
-			bodyWidth = docElem.clientWidth;
-			
-			scroll1 = SCROLL_1*bodyWidth/100;
-			scroll2 = SCROLL_2*bodyWidth/100;
-			scroll3 = SCROLL_3*bodyWidth/100;				
-		}
-
-		$(window).bind('scroll',function(e)
-		{
+			calculDimensions() 	;
 			parallaxScroll();
 		});
 
-		function parallaxScroll()
-		{
-			var scrolled = $(window).scrollTop();
-			bodyHeight = $("body").height();
-			$('#parallax-bg1').css('bottom',(scrolled/bodyHeight)*scroll1-scroll1+'px');
-			$('#parallax-bg2').css('bottom',(scrolled/bodyHeight)*scroll2-scroll2+'px');
-			$('#parallax-bg3').css('bottom',(scrolled/bodyHeight)*scroll3-scroll3-2+'px');
-			
-			
-			$('#parallax-people').css('bottom',(scrolled/bodyHeight)*(scroll1+(bodyWidth/20))-scroll1+'px');
-			$('#parallax-people').css('left',(scrolled/bodyHeight)*(scroll1+(bodyWidth/10))+'px');
-		}
+
+ */
+
+$(window).ready(function() 
+{	
+	calculPositionParallaxe();
+	resizeParallaxe();	
+	$("#parallaxBG").css("display","block");			
+	window.addEventListener('resize', function(event)
+	{
+		calculPositionParallaxe();
+		resizeParallaxe();
+	});
+});
+
+function resizeParallaxe()
+{
+	$("object.parralaxObject").width(bodyWidth);
+}
+
+
+
+
+$(window).bind('scroll',function(e)
+{
+	calculPositionParallaxe();
+});
+
+
+function calculPositionParallaxe()
+{
+	var scrolled = $(window).scrollTop();
+	calculDimensions();
+
+	var percentOfScrool = scrolled/(bodyHeight-screenHeight);
+	var negativePercentOfScrool = percentOfScrool-1;
+	var hauteur1 = percentVariationScroll1 * screenHeight/100 * negativePercentOfScrool;
+	var hauteur2 = percentVariationScroll2 * screenHeight/100 * negativePercentOfScrool;
+	var hauteur3 = percentVariationScroll3 * screenHeight/100 * negativePercentOfScrool;
+	
+	
+	
+	$('#parallax-bg1').css('bottom',hauteur1+'px');
+	$('#parallax-bg2').css('bottom',hauteur2+'px');
+	$('#parallax-bg3').css('bottom',hauteur3+'px');	
+	
+	
+	$('#parallax-people').css('bottom',hauteur1+percentOfScrool*PENTE*40+'px');
+	$('#parallax-people').css('left',percentOfScrool*(1/PENTE)*40+'px');
+}
+function calculDimensions() 
+{	
+	bodyHeight = $(document).height();		
+	bodyWidth = $(document).width();
+	screenHeight = $(window).height();
+	screenWidth = $(window).width();
+};
+
+
+
