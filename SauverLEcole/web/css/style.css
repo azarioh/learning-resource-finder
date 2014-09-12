@@ -150,7 +150,7 @@ background-color: #2ABEB2;
 
 
 .container {
-        width: 800px;
+        max-width: 800px;
 }
 
 
