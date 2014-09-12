@@ -79,7 +79,7 @@ p ::first-letter{
 	
 }
 
-#author{
+#auteur{
 	font-size: 1.5em;
 	color: #fff;
 }
@@ -145,6 +145,13 @@ background-color: #2ABEB2;
 .featurette-heading {
     font-size: 50px;
 }
+
+
+
+.container {
+        width: 800px;
+}
+
 
 
 @media(max-width:1200px) {
