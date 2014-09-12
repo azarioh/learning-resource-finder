@@ -1,7 +1,7 @@
 		
-		var SCROLL_1 =2;
+		var SCROLL_1 =0.5;
 		var SCROLL_2 =3;
-		var SCROLL_3 =5;
+		var SCROLL_3 =2;
 		var PENTE = 0.36;
 		var scroll1;
 		var scroll2;
@@ -11,13 +11,6 @@
 		
 		var docElem = document.documentElement;
 
-
-		$(document).ready(function(){
-			getDimensions();
-			window.addEventListener('resize', function(event){
-				getDimensions();
-			});
-		});
 		function getDimensions(){
 			bodyHeight = docElem.clientHeight;
 			bodyWidth = docElem.clientWidth;
@@ -38,26 +31,49 @@
 				bodyWidth = $(document).width();				
 			}
 		};
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+		/*
 		$(window).load(function() 
 		{
-			
+			calculDimensions() 
+			alert("window : load : "+bodyWidth+" : "+bodyHeight);		
+		});
+		$(document).load(function() 
+		{
+			calculDimensions() 
+			alert("document : load : "+bodyWidth+" : "+bodyHeight);
+		});
+		$(window).ready(function() 
+		{		
+			calculDimensions() 
+			alert("window : ready : "+bodyWidth+" : "+bodyHeight);
+		});
+		$(document).ready(function() 
+		{	
+			calculDimensions() 	
+			alert("document : ready : "+bodyWidth+" : "+bodyHeight);
+		});
+		
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		$(window).ready(function() 
+		{
 			$('#parallax-bg1').css('z-index',100);
 			$('#parallax-people').css('z-index',110);				
 			$('#parallax-bg2').css('z-index',120);		
 			$('#parallax-bg3').css('z-index',130);		
 		
 			calculDimensions() 
-			$("object.parralaxObject").width(bodyWidth);			
+			parallaxScroll();	
+			$("object.parralaxObject").width(bodyWidth);
+			$("#parallaxBG").css("display","block");			
 			parallaxScroll();	
 			window.addEventListener('resize', function(event)
 			{

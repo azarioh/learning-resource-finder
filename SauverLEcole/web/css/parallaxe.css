@@ -1,34 +1,4 @@
-body
-{
-	margin : 0;
-	padding : 0;
-}
-section#main
-{
-	margin : auto;
-	width : 960px;
-}
-article
-{
-	width : 440px;
-	display : inline-block;
-	vertical-align : top;
-	position : relative;
-	margin : 0 20px;	
-}
 
-h2
-{
-	margin : 0px;
-}
-
-.pays img
-{
-	width: 440px;
-	height: 320px;
-	position : relative;
-}
-/**************************/
 
 [id*="parallax"]{
 	pointer-events:none;
@@ -54,3 +24,9 @@ h2
     position: fixed;
     bottom: 0px;
 }	
+
+#parallaxBG
+{
+display : none;
+	//visibility : hidden;
+}
