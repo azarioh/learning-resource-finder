@@ -1,7 +1,7 @@
 		
-		var SCROLL_1 =0.5;
+		var SCROLL_1 =2;
 		var SCROLL_2 =3;
-		var SCROLL_3 =2;
+		var SCROLL_3 =7;
 		var PENTE = 0.36;
 		var scroll1;
 		var scroll2;
