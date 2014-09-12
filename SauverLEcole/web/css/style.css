@@ -327,6 +327,9 @@ color: #f4f19a;
 #navbarheader{
 	background-color:#362b00;
 }
+#coming-date{
+	font-size:15px;
+}
 
 @media (min-width: 768px)
 .lead {

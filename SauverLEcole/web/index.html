@@ -53,6 +53,14 @@
 
 <body>
 <!-- <div id="fb-root"></div> -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1414750432070920&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <script>/*(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -63,7 +71,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbarheader" role="navigation">
-        <div class="container">
+        <div class="container" style="max-width: 900px;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -169,8 +177,8 @@
 		 </div> -->
 
         <hr class="featurette-divider">
-        		<!-- 
-				facebook 
+        	
+				 
 			
         <div id="synopsis-facebook">
 	        <div class="featurette row" id="facebook">
@@ -178,7 +186,7 @@
 	        </div>
         </div>
         <hr class="featurette-divider">
-		-->
+		
         <!-- Footer -->
         <footer>
             <div class="row">
