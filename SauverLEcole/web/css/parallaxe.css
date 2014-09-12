@@ -11,6 +11,9 @@ object
     bottom: 0px;
 }
 	
+[id*="parallax-"]{
+    pointer-events:none;
+}
 	
 #parallax-bg1 
 {
