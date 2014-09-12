@@ -6,7 +6,7 @@
 
 body {
     margin-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	font-family: "bauerbodonistd";
+	font-family: "itcgaramondstdbk";
 	font-style:normal;
 	overflow-x : hidden;
 	background-color: rgb(57,140,190);
@@ -337,6 +337,17 @@ color: #f4f19a;
 #coming-date{
 	font-size:85%;
 }
+
+
+#synopsis-content p:first-child:first-letter
+{	
+	font-size:300%;	
+	font-size:530%;	
+	color: #f4f19a;
+	float:left; 
+   	padding-top:10px; 
+}
+
 
 @media (min-width: 768px)
 .lead {
