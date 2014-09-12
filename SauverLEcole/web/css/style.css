@@ -100,7 +100,7 @@ p ::first-letter{
 
 
 .countdown {
-	font-size: 40px;
+	font-size: 300%;
 }
 
 
@@ -229,6 +229,12 @@ background-color: #2ABEB2;
     .featurette-divider {
         margin: 30px 0;
     }
+	
+	#synopsys-title{
+		font-size:12px;
+		margin-top:0%;
+		visibility:hidden;
+	}
 }
 
 @media(max-width:640px) {
@@ -243,12 +249,6 @@ background-color: #2ABEB2;
     .headline h2 {
         font-size: 30px;
     }
-	
-	#synopsys-title{
-		font-size:12px;
-		margin-top:0%;
-		visibility:hidden;
-	}
 	
 }
 
@@ -328,7 +328,7 @@ color: #f4f19a;
 	background-color:#362b00;
 }
 #coming-date{
-	font-size:15px;
+	font-size:85%;
 }
 
 @media (min-width: 768px)

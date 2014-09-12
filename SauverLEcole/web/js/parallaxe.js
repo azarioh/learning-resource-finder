@@ -21,6 +21,22 @@
 		function getDimensions(){
 			bodyHeight = docElem.clientHeight;
 			bodyWidth = docElem.clientWidth;
+			if(bodyHeight == null)
+			{
+				bodyHeight = $(window).height();			
+			}
+			if(bodyWidth == null)
+			{
+				bodyWidth = $(window).width();				
+			}
+			if(bodyHeight == null)
+			{
+				bodyHeight = $(document).height();			
+			}
+			if(bodyWidth == null)
+			{
+				bodyWidth = $(document).width();				
+			}
 		};
 		
 		
