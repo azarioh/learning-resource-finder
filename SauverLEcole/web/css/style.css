@@ -14,7 +14,7 @@ body {
 	background-color: rgb(57,140,190);
     font-size: 200%;
 	color: #fff;
-	text-align: left;
+	text-align: justify;
 }
 
 
@@ -30,6 +30,11 @@ body {
 a {
 	color: #f4f19a;
 }
+
+a:hover {
+	color: white;
+}
+
 
 .cream {
 	color: #f4f19a;
@@ -61,6 +66,7 @@ h2 {
 	font-style:italic;
 	color: #f4f19a;
 	opacity: 0.5;
+	margin-bottom:30px;
 }
 
 #countdown-container{
