@@ -30,7 +30,10 @@ body {
 a {
 	color: #f4f19a;
 }
-	
+
+.cream {
+	color: #f4f19a;
+}
 
 p.lettrine:first-child:first-letter
 {	
@@ -41,14 +44,24 @@ p.lettrine:first-child:first-letter
    	line-height:90%;
 }
 
-.title {
-    font-size: 300%;
+h1 {
+    font-size: 200%;
 	text-align: left;
 	font-family: "bauerbodonistd";
 	font-style:italic;
-	visibility:visible;
+	color: #f4f19a;
+	text-align:left;
 }
 
+
+h2 {
+    font-size: 200%;
+	text-align: right;
+	font-family: "bauerbodonistd";
+	font-style:italic;
+	color: #f4f19a;
+	opacity: 0.5;
+}
 
 #countdown-container{
 	text-align: center;
@@ -74,11 +87,6 @@ p.lettrine:first-child:first-letter
 	
 }
 
-#facebook{
-	width: 300px;
-	margin-left:auto;
-	margin-right:auto;
-}
 
 
 
