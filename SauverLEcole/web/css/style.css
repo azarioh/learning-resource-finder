@@ -1,8 +1,10 @@
-/*!
- * Start Bootstrap - One Page Wonder HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+#navheader>li>a ,#titleheader {
+color: #f4f19a;
+}
+#navbarheader{
+	background-color:#362b00;
+}
+
 
 body {
     margin-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -10,88 +12,46 @@ body {
 	font-style:normal;
 	overflow-x : hidden;
 	background-color: rgb(57,140,190);
-	}
-	
-.header-image {
-    display: block;
-    width: 100%;
-    text-align: center;
-	
-    background: no-repeat center center scroll;  /* url('http://placehold.it/1900x500') no-repeat center center scroll; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    font-size: 200%;
+	color: #fff;
+	text-align: left;
 }
 
-.headline {
-    padding: 120px 0;
+
+.container {
+        max-width: 800px;
 }
 
-.headline h1 {
-    font-size: 60px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
 
-.headline h2 {
-    font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
 
 .navbar {
 }
 
 a {
 	color: #f4f19a;
-	
- }
+}
 	
 
-p ::first-letter{
-	float:left;
-	font-size:4em;
+p.lettrine:first-child:first-letter
+{	
+	font-size:470%;	
 	color: #f4f19a;
-	margin-right:0.10em;
-	line-height:90%;
+	float:left; 
+   	padding-right:10px; 
+   	line-height:90%;
 }
 
-#synopsis-title {
-    font-size: 50px;
-	color: #fff;
+.title {
+    font-size: 300%;
 	text-align: left;
 	font-family: "bauerbodonistd";
 	font-style:italic;
 	visibility:visible;
 }
 
-#synopsis-short{
-	font-size: 1.5em;
-	color: #fff;
-	text-align: left;
-}
-
- 
-#synopsis{
-	font-size: 1.5em;
-	color: #fff;
-	
-}
-
-#auteur{
-	font-size: 1.5em;
-	color: #fff;
-}
- 
-#contact{
-	text-align: right;
-}
 
 #countdown-container{
 	text-align: center;
-	font-size: 1.5em;
-	color: #fff;
 	/* 
 	font-family: "itcgaramondstdbk";
 	font-style:normal; 
@@ -103,37 +63,39 @@ p ::first-letter{
 	font-size: 200%;
 }
 
+#coming-date{
+	font-size:85%;
+}
 
-#image-cover{
- 	margin-left:auto;
+
+.fb-like-box{
+	margin-left:auto;
 	margin-right:auto;
-	margin-top:20px;
-	margin-bottom:20px;	
+	
+}
+
+#facebook{
+	width: 300px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 
-footer {
-    margin: 50px 0;
+
+.yellowborder  {
+	border-color: #f4f19a;
+	border-style: solid;
+	border-width: 1px;
 }
 
-/* [class*="col-"] img{
-} */
 
-/* #synopsis-divider{
-background-color: #62C5B1;
-}
-#author-divider{
-background-color: #2ABEB2;
-} */
 
 .featurette-divider {
-    margin: 80px 0;
+    margin: 40px 0;
     border-color: #f4f19a;
 }
 
-.featurette {
-    overflow: hidden;
-}
+
 
 .featurette-image.pull-left {
     margin-right: 40px;
@@ -143,150 +105,9 @@ background-color: #2ABEB2;
     margin-left: 40px;
 }
 
-.featurette-heading {
-    font-size: 50px;
-}
 
 
 
-.container {
-        max-width: 800px;
-}
-
-
-
-@media(max-width:1200px) {
-    .headline h1 {
-        font-size: 140px;
-    }
-
-    .headline h2 {
-        font-size: 63px;
-    }
-
-    .featurette-divider {
-        margin: 50px 0;
-    }
-
-    .featurette-image.pull-left {
-        margin-right: 20px;
-    }
-
-    .featurette-image.pull-right {
-        margin-left: 20px;
-    }
-
-    .featurette-heading {
-        font-size: 35px;
-    }
-}
-
-@media(max-width:991px) {
-    .headline h1 {
-        font-size: 105px;
-    }
-
-    .headline h2 {
-        font-size: 50px;
-    }
-
-    .featurette-divider {
-        margin: 40px 0;
-    }
-
-    .featurette-image {
-        max-width: 50%;
-    }
-
-    .featurette-image.pull-left {
-        margin-right: 10px;
-    }
-
-    .featurette-image.pull-right {
-        margin-left: 10px;
-    }
-
-    .featurette-heading {
-        font-size: 30px;
-    }
-}
-
-@media(max-width:768px) {
-    .container {
-        margin: 0 15px;
-    }
-
-    .featurette-divider {
-        margin: 40px 0;
-    }
-
-    .featurette-heading {
-        font-size: 25px;
-    }
-}
-
-@media(max-width:668px) {
-    .headline h1 {
-        font-size: 70px;
-    }
-
-    .headline h2 {
-        font-size: 32px;
-    }
-
-    .featurette-divider {
-        margin: 30px 0;
-    }
-	
-	#synopsys-title{
-		font-size:12px;
-		margin-top:0%;
-		visibility:hidden;
-	}
-}
-
-@media(max-width:640px) {
-    .headline {
-        padding: 75px 0 25px 0;
-    }
-
-    .headline h1 {
-        font-size: 60px;
-    }
-
-    .headline h2 {
-        font-size: 30px;
-    }
-	
-}
-
-@media(max-width:375px) {
-    .featurette-divider {
-        margin: 10px 0;
-    }
-
-    .featurette-image {
-        max-width: 100%;
-    }
-
-    .featurette-image.pull-left {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .featurette-image.pull-right {
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
-}
-.fb-like-box{
-	margin-left:auto;
-	margin-right
-	
-	
-	:auto;
-	
-}
 @font-face {
     font-family: 'bauerbodonistd';
     src: url('../fonts/BauerBodoniStd-Italic.otf');
@@ -336,33 +157,6 @@ background-color: #2ABEB2;
     font-style: normal;
 
 }
-#navheader>li>a ,#titleheader {
-color: #f4f19a;
-}
-#navbarheader{
-	background-color:#362b00;
-}
-#coming-date{
-	font-size:85%;
-}
-#facebook{
-	width: 300px;
-	margin-left:auto;
-	margin-right:auto;
-}
 
 
-#synopsis-content p:first-child:first-letter
-{	
-	font-size:300%;	
-	font-size:530%;	
-	color: #f4f19a;
-	float:left; 
-   	padding-top:10px; 
-}
 
-
-@media (min-width: 768px)
-.lead {
-font-size: 10px !important;
-}
