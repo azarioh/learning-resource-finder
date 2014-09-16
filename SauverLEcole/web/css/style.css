@@ -23,7 +23,9 @@ body {
 }
 
 
-
+#mimiform button,input{
+	color:#555;
+}
 .navbar {
 }
 
