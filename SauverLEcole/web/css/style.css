@@ -1,6 +1,13 @@
 #navheader>li>a ,#titleheader {
 color: #f4f19a;
 }
+#navheader>li>a:hover{
+	color: white;
+	
+}
+#titleheader:hover{
+	color: white;
+}
 #navbarheader{
 	background-color:#362b00;
 }
