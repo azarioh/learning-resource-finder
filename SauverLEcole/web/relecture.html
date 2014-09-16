@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -10,10 +10,6 @@
     <meta name="author" content="John Rizzo">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
-	<!-- JQuery JavaScript resources -->
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<!--  <script type="text/javascript" src="js/fbComments.js"></script> -->
     <title>Relecture des Sauver l'école ?</title>
 
     <!-- Bootstrap Core CSS -->
@@ -43,6 +39,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	
 	
 	<script type="text/javascript">
@@ -52,8 +49,7 @@
 			});
 			$('.countdown').append();
 
-			var widthfacebookdiv = $(".fb-like-box").width();
-			//$("#facebook").css("width",widthfacebookdiv);
+			Hyphenator.run();
 		});
 	</script>
 </head>
@@ -77,12 +73,12 @@
 				<div class="col-sm-6">
 					<h1>Relecture de Sauver l'école ?</h1>
 					<div>  <!-- Useless, except that without it, the lettrine does not work (it needs to be the 1st element of a div, apparently) -->
-						<p class="lettrine">Le texte du livre sera plus ou moins figé fin septembre 2014.
+						<p class="lettrine hyphenate">Le texte du livre sera plus ou moins figé fin septembre 2014.
 						Le lien ci-dessous permet de voir et de commenter le livre en ligne.</p>
 						<p><a href="https://drive.google.com/folderview?id=0B81tdPLpYylgdW5pSVN6R1p3UjA&usp=sharing">https://drive.google.com/folderview?id=0B81tdPLpYylgdW5pSVN6R1p3UjA&usp=sharing</a>
 						</p>
-						<p>C'est un lien "secret", merci de ne pas le partager sans l'accord de l'auteur.</p>
-						<p>La vidéo ci-dessous montre comment utiliser ce lien pour facilement voir et modifier le livre. Merci pour votre apport!</p>
+						<p class="hyphenate">C'est un lien "secret", merci de ne pas le partager sans l'accord de l'auteur.</p>
+						<p class="hyphenate">La vidéo ci-dessous montre comment utiliser ce lien pour facilement voir et modifier le livre. Merci pour votre apport!</p>
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -114,8 +110,9 @@
     <!-- /.container -->
 
 
-	<!-- Bootstrap Core JavaScript -->
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/hyphenate-fr.js"></script>
 
 </body>
 

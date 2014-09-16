@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -10,10 +10,7 @@
     <meta name="author" content="John Rizzo">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
-	<!-- JQuery JavaScript resources -->
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<!--  <script type="text/javascript" src="js/fbComments.js"></script> -->
+
     <title>Sauver l'école ?</title>
 
     <!-- Bootstrap Core CSS -->
@@ -43,6 +40,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	
 	
 	<script type="text/javascript">
@@ -54,6 +52,8 @@
 
 			var widthfacebookdiv = $(".fb-like-box").width();
 			//$("#facebook").css("width",widthfacebookdiv);
+			
+			Hyphenator.run();
 		});
 	</script>
 </head>
@@ -107,7 +107,7 @@
 				<div class="col-sm-6">
 					<h1>Sauver l’école&nbsp;?</h1>
 					<div>  <!-- Useless, except that without it, the lettrine does not work (it needs to be the 1st element of a div, apparently) -->
-						<p class="lettrine">Après avoir revendu sa start-up, il est
+						<p class="lettrine hyphenate">Après avoir revendu sa start-up, il est
 							devenu... instituteur&nbsp;! À la découverte d’un système
 							scolaire en crise, John Rizzo raconte ses trouvailles et ses
 							expériences de terrain au fil d’anecdotes souvent drôles, parfois
@@ -134,11 +134,11 @@
 
 			
 			<div>  <!-- Useless, except that without it, the lettrine does not work (it needs to be the 1st element of a div, apparently) -->
-				<p class="lettrine">Depuis plusieurs années, les classements internationaux placent l’enseignement en Fédération Wallonie-Bruxelles en piètre posture malgré l’argent investi et une somme de bonnes volontés. La faute à qui&nbsp;? Aux politiques&nbsp;? Aux profs&nbsp;? À l’administration&nbsp;? Aux parents&nbsp;? Aux élèves&nbsp;? À la crise&nbsp;?</p>
-				<p>Après avoir consacré de nombreuses années de sa vie à l’enseignement de l’informatique, John Rizzo a décidé de dédier l’essentiel de son temps à l’étude des arcanes du système scolaire belge. 
-				Au fil de ses recherches, il a rencontré les acteurs clés de notre système éducatif, formé des demandeurs d’emplois et a fini au coeur des classes, comme instituteur au service d’une panoplie d’écoles wallonnes et bruxelloises en tous genres. 
+				<p class="lettrine hyphenate">Depuis plusieurs années, les classements internationaux placent l’enseignement en Fédération Wallonie-Bruxelles en piètre posture malgré l’argent investi et une somme de bonnes volontés. La faute à qui&nbsp;? Aux politiques&nbsp;? Aux profs&nbsp;? À l’administration&nbsp;? Aux parents&nbsp;? Aux élèves&nbsp;? À la crise&nbsp;?</p>
+				<p class="hyphenate">Après avoir consacré de nombreuses années de sa vie à l’enseignement de l’informatique, John Rizzo a décidé de dédier l’essentiel de son temps à l’étude des arcanes du système scolaire belge. 
+				Au fil de ses recherches, il a rencontré les acteurs clés de notre système éducatif, formé des demandeurs d’emploi et a fini au coeur des classes, comme instituteur au service d’une panoplie d’écoles wallonnes et bruxelloises en tous genres. 
 				En se demandant comment redonner aux futurs adultes un avenir réjouissant, ses lectures, ses rencontres et son expérience lui ont permis de dégager quelques pistes de compréhension.</p>
-				<p>Ce livre raconte son parcours à la recherche de réponses. Le déclin de l’école est-il inéluctable&nbsp;? Doit-elle être réformée&nbsp;? Faut-il repartir de zéro et bâtir un système adapté aux besoins modernes et aux nouveaux modes de communication&nbsp;? En somme, faut-il <i>sauver l’école&nbsp;?</i></p>
+				<p class="hyphenate">Ce livre raconte son parcours à la recherche de réponses. Le déclin de l’école est-il inéluctable&nbsp;? Doit-elle être réformée&nbsp;? Faut-il repartir de zéro et bâtir un système adapté aux besoins modernes et aux nouveaux modes de communication&nbsp;? En somme, faut-il <i>sauver l’école&nbsp;?</i></p>
 				
 			</div>
 		</div>
@@ -151,7 +151,7 @@
 			
 			<div class="row">
 				<div class="col-sm-9"> 
-					<p>20 ans d'expérience dans l'enseignement de l'informatique de haut niveau aux adultes ont fait de John Rizzo un spécialiste de la collaboration entre élèves et de l'usage d'Internet en classe. Père de trois enfants, il consacre l'essentiel de son temps depuis 2012 à comprendre et aider le système scolaire belge. C'est dans ce cadre qu'il a fondé <a href="http://ToujoursPlus.be">ToujoursPlus.be</a>, une plateforme informatique d'aide aux élèves, aux parents et aux enseignants où ceux-ci trouvent vidéos, ressources et jeux pédagogiques.</p>
+					<p class="hyphenate">20 ans d'expérience dans l'enseignement de l'informatique de haut niveau aux adultes ont fait de John Rizzo un spécialiste de la collaboration entre élèves et de l'usage d'Internet en classe. Père de trois enfants, il consacre l'essentiel de son temps depuis 2012 à comprendre et aider le système scolaire belge. C'est dans ce cadre qu'il a fondé <a href="http://ToujoursPlus.be">ToujoursPlus.be</a>, une plateforme informatique d'aide aux élèves, aux parents et aux enseignants où ceux-ci trouvent vidéos, ressources et jeux pédagogiques.</p>
 				</div>
 				<div class="col-sm-3"> 
 					<img class="yellowborder featurette-image img-rectangle img-responsive"  src="img/john-rizzo-author.png">
@@ -167,7 +167,7 @@
 
 			<h2>Inscription</h2>
 			
-			<p>Recevez chaque semaine un extrait dans courrier électronique.</p>
+			<p class="hyphenate">Recevez chaque semaine un extrait dans courrier électronique.</p>
 		    <div style="text-align:center">
 		        <p>Inscription bientôt disponible</p> <!-- Formulaire mad mimi ici!! -->
 		        <p style="font-size:80%">Nous respectons votre vie privée : votre adresse ne sera pas diffusée à des tiers.</p>
@@ -181,7 +181,7 @@
 			<h2>Pré-commande</h2>
 			
 			
-  	        <p>Il sera bientôt possible de pré-commander le livre chez l’éditeur, avant sa sortie du 18 mars 2015. Vous le recevrez par la poste, une semaine avant la date officielle de sortie.</p>
+  	        <p class="hyphenate">Il sera bientôt possible de pré-commander le livre chez l’éditeur, avant sa sortie du 18 mars 2015. Vous le recevrez par la poste, une semaine avant la date officielle de sortie.</p>
 			
 		    <div style="text-align:center">
 		       
@@ -237,8 +237,6 @@
     <!-- /.container -->
 
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
 
 
     <!--  Parallax  Commented until it works on Safari/Opera.
@@ -264,6 +262,12 @@
 				> </object>
 	</section>
 	-->
+	
+	<!-- JQuery JavaScript resources -->
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/hyphenate-fr.js"></script>
+	
 </body>
 
 </html>

@@ -40,6 +40,10 @@ a:hover {
 	color: #f4f19a;
 }
 
+p.hyphens {
+    hyphens: auto;
+}
+
 p.lettrine:first-child:first-letter
 {	
 	font-size:470%;	
