@@ -9,7 +9,7 @@ NOW=$(date '+%F_%T')
 FRAMEWORK_NAME=LearningResourceFinder
 
 APP_ENV=PROD
-APP_NAME=LearningResourceFinder
+APP_NAME=enseignement2.be
 
 BACKUPS_TO_KEEP=5
 OLD_WAR_COPY_NAME=ROOT_$NOW.war
@@ -25,7 +25,7 @@ TOMCAT_LOG_FILE=/var/log/tomcat7/catalina.out
 TIME_TOMCAT_TO_START=45s
 
 DB_NAME=LRF
-DB_USER=lrfuser
+DB_USER=LRF
 
-#APP_SVN_ADRESS=https://learning-resource-finder.googlecode.com/svn/
-APP_SVN_ADRESS=https://github.com/azarioh/learning-resource-finder
+FRAMEWORK_SVN_ADRESS=https://learning-resource-finder.googlecode.com/svn/
+APP_SVN_ADRESS=https://enseignement2.googlecode.com/svn/

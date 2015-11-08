@@ -29,22 +29,24 @@ function buildWar(){
   cd $BUILD_FOLDER/$1
   ant -Dant.project.name=$1 -Dtype=$2 war
 }
-
-
 function checkout_build(){
-
+  #first we checkout or update the LRF framework sourcecode
+  echo "update "$FRAMEWORK_NAME"..."
+  if [ -d "./$FRAMEWORK_DIR_NAME" ] ; then
+    update $FRAMEWORK_DIR_NAME
+  else 
+    checkout $FRAMEWORK_DIR_NAME $FRAMEWORK_SVN_ADRESS/$FRAMEWORK_SVN_PATH
+  fi
   cd $BUILD_FOLDER
 
-  #first we checkout or update the LRF sourcecode
+  #second we do the same with the app
+  echo "update "$APP_NAME"..."
   if [ -d "./$APP_DIR_NAME" ] ; then
-    echo "update "$APP_NAME"..."
     update $APP_DIR_NAME
-  else
-    echo "checkout "$APP_NAME"..."
-#    checkout $APP_DIR_NAME $APP_SVN_ADRESS/$APP_SVN_PATH
-    checkout $APP_DIR_NAME $APP_SVN_ADRESS
+  else 
+    checkout $APP_DIR_NAME $APP_SVN_ADRESS/$APP_SVN_PATH
   fi
 
-  #second we build the app
+  #third we build the app
   buildWar $APP_DIR_NAME $APP_ENV
 }
