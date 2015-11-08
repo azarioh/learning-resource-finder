@@ -212,7 +212,14 @@ public class ResourceRepository extends BaseRepository<Resource> {
     }
 
     public long countResources() {
+    	try 
+    	{
             return (Long)em.createQuery("SELECT  count(r) from Resource r ").getSingleResult();
+		} 
+    	catch (Exception e) 
+    	{
+			return -1L;
+		}
     }
    
     public long countResourcesByCompetenceAndCycle(Long competenceId, Long cycleId) {
