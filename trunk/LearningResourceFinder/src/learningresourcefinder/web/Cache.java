@@ -161,6 +161,8 @@ public class Cache implements ServletContextListener {
 		CompetenceRepository competenceRepository = ContextUtil.getSpringBean(CompetenceRepository.class);
 
 		idCyclesInDb.clear();
+		computedTopResourcesByCycle.clear();
+		computedCategoriesByCycle.clear();
 
 		for(Cycle cycle : cycles) {
 
@@ -187,6 +189,7 @@ public class Cache implements ServletContextListener {
 		}
 
 		/////// 3. Autocomplete
+		searchAutocompleteMasterStrings.clear();
 		for (Topic topic : Topic.values()){
 			searchAutocompleteMasterStrings.add(topic.getDescription());
 		}
